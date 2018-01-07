@@ -1,0 +1,31 @@
+/* font style */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.btn-crazy {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transition: 0.5s ease all;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 5%;
+  border: none;
+  color: #fff;
+}
+
+.btn-green {
+  background-color: green;
+}
+.btn-pink {
+  background-color: pink;
+}
+.btn-yellow {
+  background-color: yellow;
+}
+.btn-black {
+  background-color: black;
+}

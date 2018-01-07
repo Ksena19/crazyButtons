@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+		<title>CrazyButtons</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+</head>
+<body>
+
+		<button type="button" class="btn-crazy  btn-red">Click Me!</button>
+		<button type="button" class="btn-crazy  btn-green">Click Me!</button>
+		<button type="button" class="btn-crazy  btn-pink">Click Me!</button>
+		<button type="button" class="btn-crazy  btn-yellow">Click Me!</button>
+		<button type="button" class="btn-crazy  btn-black">Click Me!</button>
+
+<script>
+const crazy_btns = document.querySelectorAll('.btn-crazy');
+
+function goCrazy() {
+  const offsetLeft = Math.random() * (window.innerWidth - this.cleintWith);
+  const offsetTop = Math.random() * (window.innerHeight - this.cleintHeight);
+
+console.log(offsetLeft, offsetTop);
+
+  this.style.top = offsetTop + 'px';
+  this.style.left = offsetLeft + 'px';
+
+}
+
+crazy_btns.forEach(button => button.addEventListener('mouseover', goCrazy()));
+
+</script>
+</body>
+</html>
